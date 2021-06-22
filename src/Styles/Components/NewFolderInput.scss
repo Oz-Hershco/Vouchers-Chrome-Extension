@@ -1,0 +1,36 @@
+@import "../App.scss";
+
+.NewFolderInput {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $white;
+    border-bottom: 1px solid $lightgray;
+    padding: 0.3em 0.5em;
+}
+
+.NewFolderInput-Left{
+    display: flex;
+    align-items: center;
+}
+
+.NewFolderInput input {
+    width: 100%;
+    border: none;
+    color: $gray;
+    font-size: 12pt;
+}
+
+.NewFolderInput input::placeholder {
+    color: $midgray;
+}
+
+.NewFolderInput input:focus,
+.NewFolderInput input:active {
+    outline: none;
+    box-shadow: none;
+}
+
+.NewFolderInput img {
+    margin-right: 0.3em;
+}

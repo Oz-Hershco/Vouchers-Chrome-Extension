@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "VCan",
+  "description": "An extension for saving and usage of vouchers",
+  "version": "0.0.1",
+  "browser_action": {
+    "default_popup": "index.html",
+    "default_title": "Open the popup"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "icons": {
+    "16": "logo16.png",
+    "32": "logo32.png",
+    "48": "logo48.png",
+    "128": "logo128.png"
+  },
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "storage"
+  ],
+  "content_security_policy": "script-src 'self' 'sha256-1eNwUo/B4oYTiC2yHJB02gG9q8y2DIQ4XTj7gUX6xIE=' https://apis.google.com https://cdn.firebase.com https://www.gstatic.com; object-src 'self'"
+}

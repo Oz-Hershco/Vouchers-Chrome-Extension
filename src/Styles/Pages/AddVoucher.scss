@@ -1,0 +1,158 @@
+@import "../App.scss";
+
+.AddVoucher-Body {
+  min-height: 230px;
+  max-height: 230px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 2em 2em 1em 2em;
+}
+
+/* width */
+.AddVoucher-Body::-webkit-scrollbar {
+    width:8px;
+  }
+  
+  /* Track */
+  .AddVoucher-Body::-webkit-scrollbar-track {
+    background: lighten($color: $midgray, $amount: 15);
+  }
+  
+  /* Handle */
+  .AddVoucher-Body::-webkit-scrollbar-thumb {
+    background: $orange;
+  }
+  
+  /* Handle on hover */
+  .AddVoucher-Body::-webkit-scrollbar-thumb:hover {
+    background: lighten($color: $orange, $amount: 5);
+  }
+
+.AddVoucher-Title-Input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 0.5pt solid $midgray;
+  border-radius: 0;
+  margin-bottom: 1em;
+  padding-bottom: 0.5em;
+  font-size: 12pt;
+  color:$gray;
+}
+
+.AddVoucher-Title-Input::placeholder {
+  color:$midgray;
+}
+
+.AddVoucher-Title-Input:focus,
+.AddVoucher-Title-Input:active {
+  outline: none;
+  box-shadow: none;
+}
+
+.AddVoucher-Selected-Image {
+  width: auto;
+  height: 16em;
+}
+
+.AddVoucherOptions-Container {
+}
+
+.AddVoucher-Image-Replace-Btn {
+  color: $orange;
+  font-weight: 600;
+  font-size: 11pt;
+  margin: 0.5em 0;
+  cursor: pointer;
+}
+
+#AddVoucher-Image-Replace-Fileuploader {
+  display: none;
+}
+
+.AddVoucher-Footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $lightgray;
+  border-top: 0.5pt solid $midgray;
+  height: 70px;
+}
+
+.AddVoucherOptions-Folderselect-Container {
+  background-color: $white;
+  display: flex;
+  align-items: center;
+  border: 1px solid $midgray;
+  padding: 0 0.5em;
+  margin-bottom: 1em;
+}
+
+select.AddVoucherOptions-Folderselect-Input {
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  padding: 0.5em 2em;
+  color: $gray;
+  font-weight: $lightweight;
+  background-repeat: no-repeat;
+  background-position-y: center;
+}
+
+select.AddVoucherOptions-Folderselect-Input:focus {
+  border: none;
+  outline: none;
+}
+
+.AddVoucherOptions-AmountCurrency-Container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.AddVoucherOptions-Amount-Input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 0.5pt solid $midgray;
+  border-radius: 0;
+  margin-bottom: 1em;
+  padding-bottom: 0.5em;
+  font-size: 10pt;
+color:$gray;
+}
+
+.AddVoucherOptions-Amount-Input::placeholder {
+  color: $midgray;
+}
+
+.AddVoucherOptions-Amount-Input:focus,
+.AddVoucherOptions-Amount-Input:active {
+  outline: none;
+  box-shadow: none;
+}
+
+.AddVoucherOptions-Currency-Container {
+    background-color: $white;
+    display: flex;
+    align-items: center;
+    border: 1px solid $midgray;
+    margin-bottom: 1em;
+    padding-right: .3em;
+  }
+  
+  select.AddVoucherOptions-Currencyselect-Input {
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    padding: 0.5em 0.2em 0.5em .3em;
+    color: $gray;
+    font-weight: $lightweight;
+    background-repeat: no-repeat;
+    background-position-y: center;
+  }
+  
+  select.AddVoucherOptions-Currencyselect-Input:focus {
+    border: none;
+    outline: none;
+  }

@@ -1,0 +1,221 @@
+//Colors -
+$black: #000000;
+$gray: #808080;
+$midgray: #bfbfbf;
+$lightgray: #f2f2f2;
+$white: #ffffff;
+$lightgreen: #8dd2be;
+$green: #04bf8a;
+$darkgreen: #1ba67e;
+$teal: #04adbf;
+$darkteal: #018794;
+$darkesteal: #016872;
+$yellow: #ffae02;
+$orange: #ff7902;
+$darkorange: #d97c2b;
+$blue: #3d64cf;
+$darkblue: #1848ca;
+$darkestblue: #0e349a;
+//Fonts Weights -
+$lightweight: 300;
+$mediumweight: 500;
+
+//Font Sizes -
+
+//General Style Settings
+.App {
+  min-height: 350px;
+  width: 400px;
+  background-color: #f2f2f2;
+}
+
+.App.EmptyLoading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 430px;
+  width: 400px;
+}
+
+.App.EmptyLoading p {
+  font-size: x-large;
+  color: $green;
+  margin-right: 0.5em;
+  margin-bottom: 0;
+}
+
+// .App.EmptyLoading img {
+//   font-size: xx-large;
+//   color:$green;
+// }
+
+.App.EmptyLoading .scaler {
+  animation: scale 500ms ease infinite;
+}
+
+.App.EmptyLoading .spinner {
+  animation: spin 2000ms linear infinite;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.App.Login-State {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.App.Login-State .Login-State-Header {
+  flex: 2;
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  padding-left: 1em;
+  padding-top: 1em;
+}
+
+.App.Login-State .Login-State-Footer {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+
+.button-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $teal;
+  padding: 0.7em 1.2em;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: medium;
+}
+
+.button-secondary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $blue;
+  padding: 0.7em 1.2em;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: medium;
+}
+
+.button-secondary:hover {
+  background-color: $darkblue;
+}
+
+.button-secondary:active {
+  background-color: $darkestblue;
+}
+
+.button-main:hover {
+  background-color: $darkteal;
+}
+
+.button-main:active {
+  background-color: $darkesteal;
+}
+
+.button-main img,
+.button-secondary img {
+  margin-right: 0.5em;
+}
+
+.text-button-primary {
+  color: $green;
+  border-radius: 5px;
+  font-size: small;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.text-button-danger {
+  color: $orange;
+  border-radius: 5px;
+  // font-size: small;
+  font-weight: 400;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-button-danger span {
+margin-left: .25em;
+}
+
+.text-button-plain {
+  color: $gray;
+  border-radius: 5px;
+  font-size: small;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.App-Login-Btn {
+  border: 1px solid $midgray;
+  border-radius: 5px;
+  padding: 0.5em 1em;
+  cursor: pointer;
+}
+
+.App-Login-Btn:hover {
+  background-color: $white;
+}
+
+.App-Login-Btn img {
+  width: auto;
+  height: 1em;
+}
+
+.App-Login-Btn span {
+  margin-left: 0.5em;
+  font-size: 11pt;
+  color: $gray;
+}
+
+.App-Logout-Btn {
+  cursor: pointer;
+  font-size: 18pt;
+  color: $white;
+}

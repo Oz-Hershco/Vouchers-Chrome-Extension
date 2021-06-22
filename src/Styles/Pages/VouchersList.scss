@@ -1,0 +1,35 @@
+@import "../App.scss";
+
+.VouchersList-Body {
+    min-height: 230px;
+    max-height: 230px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+.VouchersList-Footer {
+    border-top: 1pt solid $midgray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $lightgray;
+    min-height: 50px;
+    padding: 1em;
+}
+
+.VouchersList-Footer-Left, .VouchersList-Footer-Right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+}
+
+.VouchersList-Footer-Labels{
+    color:$gray;
+    font-weight: $mediumweight;
+}
+.VouchersList-Footer-Labels span{
+    font-weight: $lightweight;
+    margin-left: .25em;
+}

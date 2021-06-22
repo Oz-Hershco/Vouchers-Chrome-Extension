@@ -1,0 +1,48 @@
+@import "../App.scss";
+
+.VoucherItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $white;
+    border-bottom: 1px solid $lightgray;
+    padding: 0.5em 1em;
+    cursor: pointer;
+}
+
+.VoucherItem-Left,
+.VoucherItem-Right {
+    display: flex;
+    align-items: center;
+}
+
+.VoucherItem-Check-Btn {
+    cursor: pointer;
+    margin-right: 0.75em;
+}
+
+.VoucherItem-Left-Bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.VoucherItem-Title {
+    color: $gray;
+    font-weight: $mediumweight;
+}
+
+.VoucherItem-Timestamp,
+.VoucherItem-Amount,
+.VoucherItem-Currency {
+    color: $gray;
+    font-weight: $lightweight;
+    font-size: small;
+}
+
+.VoucherItem-Amount {
+    margin-right: 0.5em;
+}
+.VoucherItem-Chev {
+    margin-left: 1em;
+}

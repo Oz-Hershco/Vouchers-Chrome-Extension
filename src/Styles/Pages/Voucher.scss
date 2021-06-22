@@ -1,0 +1,43 @@
+@import "../App.scss";
+
+.Voucher-Body {
+  min-height: 230px;
+  max-height: 230px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 2em 2em 1em 2em;
+}
+
+.Voucher-Image {
+  cursor: pointer;
+}
+
+/* width */
+.Voucher-Body::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+.Voucher-Body::-webkit-scrollbar-track {
+  background: lighten($color: $midgray, $amount: 15);
+}
+
+/* Handle */
+.Voucher-Body::-webkit-scrollbar-thumb {
+  background: $orange;
+}
+
+/* Handle on hover */
+.Voucher-Body::-webkit-scrollbar-thumb:hover {
+  background: lighten($color: $orange, $amount: 5);
+}
+
+.Voucher-Footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: $lightgray;
+  border-top: 0.5pt solid $midgray;
+  height: 70px;
+}

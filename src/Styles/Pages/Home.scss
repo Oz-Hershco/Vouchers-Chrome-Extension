@@ -1,0 +1,94 @@
+@import "../App.scss";
+
+.Home {
+  height: 100%;
+  min-height: 350px;
+  width: 400px;
+}
+
+.Home-Body {
+  min-height: 300px;
+  overflow-y: auto;
+  background-color: $lightgray;
+  display: flex;
+  flex-direction: column;
+}
+
+.Home-Body-Empty-Container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.Folders-Controls-Container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5em 1em 0.5em 0.5em;
+  border-bottom: 1px solid $midgray;
+}
+
+.Folders-Controls-Container div {
+  display: flex;
+  align-items: center;
+}
+
+.Folders-Controls-Container span {
+  color: $gray;
+  margin-left: 0.5em;
+}
+
+.Folders-Container.Empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex: 1;
+}
+
+.Folders-Container {
+  overflow-y: auto;
+  max-height: 250px;
+}
+
+/* width */
+.Folders-Container::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+.Folders-Container::-webkit-scrollbar-track {
+  background: lighten($color: $midgray, $amount: 15);
+}
+
+/* Handle */
+.Folders-Container::-webkit-scrollbar-thumb {
+  background: $orange;
+}
+
+/* Handle on hover */
+.Folders-Container::-webkit-scrollbar-thumb:hover {
+  background: lighten($color: $orange, $amount: 5);
+}
+
+.Folders-Add-Btn {
+  cursor: pointer;
+}
+
+.Folders-Edit-Btns-Container * {
+  margin-left: 1em;
+}
+
+.Empty-State-Text {
+  color: $gray;
+  font-size: 10pt;
+  margin: 0;
+}
+
+.Home-Footer {
+  background-color: $lightgray;
+  border-top: 0.5pt solid $midgray;
+  height: 70px;
+}

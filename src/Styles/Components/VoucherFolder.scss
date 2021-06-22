@@ -1,0 +1,59 @@
+@import "../App.scss";
+
+.VoucherFolder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $white;
+  border-bottom: 1px solid $lightgray;
+  padding: 0.3em 0.5em;
+  cursor: pointer;
+}
+
+.VoucherFolder.emptyfolder {
+  opacity: 0.75;
+  cursor: default;
+}
+
+.VoucherFolder-Delete-Btn {
+  color: $gray;
+  font-size: 18pt;
+  padding: 0.1em;
+  margin-right: 0.2em;
+  cursor: pointer;
+}
+
+.VoucherFolder-Delete-Btn:hover {
+  color: $orange;
+}
+
+// .VoucherFolder:hover {
+//     background-color: lighten($color: $yellow, $amount: 40);
+// }
+
+// .VoucherFolder:active {
+//     background-color: lighten($color: $yellow, $amount: 30);
+// }
+
+.VoucherFolder-Left,
+.VoucherFolder-Right {
+  display: flex;
+  align-items: center;
+}
+
+.VoucherFolder-Left img {
+  margin-right: 0.3em;
+}
+
+.VoucherFolder-Left span {
+  color: $gray;
+}
+
+.VoucherFolder-Right img {
+  margin-left: 0.3em;
+}
+
+.VoucherFolder-Right span {
+  color: $gray;
+  font-weight: $mediumweight;
+}
